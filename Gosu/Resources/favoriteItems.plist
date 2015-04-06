@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Sports</string>
+		<key>items</key>
+		<array>
+			<string>Football</string>
+			<string>Baseball</string>
+			<string>Basketball</string>
+			<string>Badminton</string>
+			<string>Swimming</string>
+			<string>Volleyball</string>
+			<string>Hockey</string>
+			<string>Tennis</string>
+			<string>Table tennis</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Music</string>
+		<key>items</key>
+		<array>
+			<string>Chocolate</string>
+			<string>Feds Watching</string>
+			<string>Shabba</string>
+			<string>Shot</string>
+			<string>Red &amp; White &amp; Blue &amp; Gold</string>
+			<string>Do I Wanna Know?</string>
+			<string>Honeymoon Avenue</string>
+			<string>Used</string>
+			<string>Recover</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Destinations</string>
+		<key>items</key>
+		<array>
+			<string>Orlando</string>
+			<string>L.A</string>
+			<string>New York</string>
+			<string>ShangHai</string>
+			<string>Washington</string>
+			<string>Portland</string>
+			<string>London</string>
+			<string>Paris</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Cuisine</string>
+		<key>items</key>
+		<array>
+			<string>Lebanese</string>
+			<string>Greek</string>
+			<string>Spanish</string>
+			<string>Japanese</string>
+			<string>Mexican</string>
+			<string>Thai</string>
+			<string>Indian</string>
+			<string>Chinese</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Entertainment</string>
+		<key>items</key>
+		<array>
+			<string>Private Benjamin</string>
+			<string>Modern Family</string>
+			<string>BBT</string>
+			<string>New Girl</string>
+			<string>Lady and Tramp</string>
+			<string>Napoleon Dynamite</string>
+			<string>Bridesmaids</string>
+			<string>Aristocats</string>
+		</array>
+	</dict>
+</array>
+</plist>

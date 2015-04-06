@@ -31,7 +31,7 @@ Please clone the repo from remote to your local. You could use Github app to clo
 Or you could run the followng command in the Terminal.
 
     $ cd PATH_TO_CLONE
-    $ git clone https://github.com/GosuApp/Gosu1.git
+    $ git clone https://github.com/LesConciergesGosu/GosuApp.git
 
 Step 3: Install Dependencies
 ---------------

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardTaskPopup">
+            <connections>
+                <outlet property="backgroundView" destination="fup-ch-Vl5" id="5bz-TK-iTx"/>
+                <outlet property="boardCollectionView" destination="UZR-ww-4nS" id="cnr-fG-nfF"/>
+                <outlet property="boardTipLabel" destination="Yme-vi-sU7" id="Jnw-X0-mCa"/>
+                <outlet property="boardView" destination="XM8-sQ-mci" id="mgQ-sB-7mB"/>
+                <outlet property="btnAccomodation" destination="TMF-r8-HJn" id="72c-S4-NeD"/>
+                <outlet property="btnEntertainment" destination="UFw-Ow-ATf" id="FEv-Fe-KzR"/>
+                <outlet property="btnFood" destination="fh2-pa-WkA" id="iJ1-Ob-4rr"/>
+                <outlet property="btnGifts" destination="2hZ-wW-XpH" id="raD-mX-GJf"/>
+                <outlet property="btnTravel" destination="vXB-Ts-Vgn" id="j9a-gj-AJg"/>
+                <outlet property="buttonView" destination="Ryx-MM-2tb" id="svd-9B-8oQ"/>
+                <outlet property="closeButton" destination="LiZ-UO-ymR" id="fZY-xV-Pci"/>
+                <outlet property="contentView" destination="Lbr-gJ-5ye" id="afF-uV-x8r"/>
+                <outlet property="mainButton" destination="kLa-jQ-EXu" id="UQM-PT-S4L"/>
+                <outlet property="popupBackgroundView" destination="qvx-sE-Nt9" id="dz2-JB-upf"/>
+                <outlet property="popupTableView" destination="Mb8-p7-wj4" id="25q-6K-epa"/>
+                <outlet property="popupView" destination="NjS-Xb-Fbx" id="1UA-jW-0nd"/>
+                <outlet property="trashButton" destination="GYn-pE-L8l" id="Yc9-CD-LAW"/>
+                <outletCollection property="mainButtons" destination="TMF-r8-HJn" id="dzs-62-N5T"/>
+                <outletCollection property="mainButtons" destination="vXB-Ts-Vgn" id="kYD-Bm-ZHq"/>
+                <outletCollection property="mainButtons" destination="fh2-pa-WkA" id="OQb-4C-Ibe"/>
+                <outletCollection property="mainButtons" destination="UFw-Ow-ATf" id="2nT-5R-DIg"/>
+                <outletCollection property="mainButtons" destination="2hZ-wW-XpH" id="FQV-SY-RRh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="fup-ch-Vl5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.34509803921568627" green="0.33725490196078434" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="Lbr-gJ-5ye">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LiZ-UO-ymR">
+                            <rect key="frame" x="274" y="23" width="44" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="X">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Gotham-XLight"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onDismiss:" destination="-1" eventType="touchUpInside" id="Ldk-H8-hnB"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" id="Ryx-MM-2tb">
+                            <rect key="frame" x="0.0" y="408" width="320" height="160"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2hZ-wW-XpH" userLabel="Button - Gift">
+                                    <rect key="frame" x="214" y="86" width="60" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="task_icon_gift" backgroundImage="taskpopup_gifts">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="taskpopup_gifts_sel"/>
+                                    <connections>
+                                        <action selector="onGift:" destination="-1" eventType="touchUpInside" id="O03-GI-xjB"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UFw-Ow-ATf" userLabel="Button - Entertainment">
+                                    <rect key="frame" x="193" y="25" width="60" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="task_icon_entertainment" backgroundImage="taskpopup_entertainment">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="taskpopup_entertainment_sel"/>
+                                    <connections>
+                                        <action selector="onEntertainment:" destination="-1" eventType="touchUpInside" id="wi5-gn-lsZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fh2-pa-WkA" userLabel="Button - Food">
+                                    <rect key="frame" x="130" y="0.0" width="60" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="task_icon_food" backgroundImage="taskpopup_food">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" image="task_icon_food" backgroundImage="taskpopup_food_sel"/>
+                                    <connections>
+                                        <action selector="onFood:" destination="-1" eventType="touchUpInside" id="Kij-kN-547"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vXB-Ts-Vgn" userLabel="Button - Flight">
+                                    <rect key="frame" x="67" y="25" width="60" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="task_icon_travel" backgroundImage="taskpopup_travel">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="taskpopup_travel_sel"/>
+                                    <connections>
+                                        <action selector="onTravel:" destination="-1" eventType="touchUpInside" id="nAZ-KL-BFc"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TMF-r8-HJn" userLabel="Button - Accomodation">
+                                    <rect key="frame" x="46" y="86" width="60" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="task_icon_accomodation" backgroundImage="taskpopup_accomodation">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="taskpopup_accomodation_sel"/>
+                                    <connections>
+                                        <action selector="onAccomodation:" destination="-1" eventType="touchUpInside" id="WoF-xx-uah"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kLa-jQ-EXu">
+                            <rect key="frame" x="130" y="494" width="60" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <state key="normal" image="taskpopup_btn2">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onDone:" destination="-1" eventType="touchUpInside" id="8l0-gF-MF9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GYn-pE-L8l">
+                            <rect key="frame" x="120" y="484" width="80" height="80"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <state key="normal" image="taskpopup_trash_sel">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <view contentMode="scaleToFill" id="XM8-sQ-mci">
+                            <rect key="frame" x="0.0" y="186" width="320" height="200"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to add a Hotel or Dinner?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yme-vi-sU7">
+                                    <rect key="frame" x="30" y="0.0" width="260" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Gotham-XLight"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" dataMode="none" id="UZR-ww-4nS">
+                                    <rect key="frame" x="0.0" y="70" width="320" height="130"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="G2e-wZ-5z1" customClass="CollectionViewCenterFlowLayout">
+                                        <size key="itemSize" width="60" height="60"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <cells/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="nlk-EM-uKF"/>
+                                        <outlet property="delegate" destination="-1" id="Jfr-EO-y2f"/>
+                                    </connections>
+                                </collectionView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view alpha="0.0" contentMode="scaleToFill" id="NjS-Xb-Fbx" customClass="DashboardTaskSubPopup">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="398"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view alpha="0.59999999999999998" contentMode="scaleToFill" id="qvx-sE-Nt9">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="398"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" red="0.75294117650000003" green="0.22352941179999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="70" sectionHeaderHeight="1" sectionFooterHeight="1" id="Mb8-p7-wj4">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="388"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="NmL-kj-5rZ"/>
+                                        <outlet property="delegate" destination="-1" id="gq4-cs-VD9"/>
+                                    </connections>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="task_icon_accomodation" width="30" height="30"/>
+        <image name="task_icon_entertainment" width="30" height="30"/>
+        <image name="task_icon_food" width="30" height="30"/>
+        <image name="task_icon_gift" width="30" height="30"/>
+        <image name="task_icon_travel" width="30" height="30"/>
+        <image name="taskpopup_accomodation" width="60" height="60"/>
+        <image name="taskpopup_accomodation_sel" width="60" height="60"/>
+        <image name="taskpopup_btn2" width="60" height="60"/>
+        <image name="taskpopup_entertainment" width="60" height="60"/>
+        <image name="taskpopup_entertainment_sel" width="60" height="60"/>
+        <image name="taskpopup_food" width="60" height="60"/>
+        <image name="taskpopup_food_sel" width="60" height="60"/>
+        <image name="taskpopup_gifts" width="60" height="60"/>
+        <image name="taskpopup_gifts_sel" width="60" height="60"/>
+        <image name="taskpopup_trash_sel" width="80" height="80"/>
+        <image name="taskpopup_travel" width="120" height="120"/>
+        <image name="taskpopup_travel_sel" width="60" height="60"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
